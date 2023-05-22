@@ -5,9 +5,7 @@
         <Nullable>enable</Nullable>
         <RootNamespace>Microsoft.Extensions.Configuration</RootNamespace>
         <TargetFramework>net7.0</TargetFramework>
-    </PropertyGroup>
-    
-    <PropertyGroup>
+
         <Authors>Daniel P. Doyle</Authors>
         <Copyright>© 2023 Daniel P. Doyle</Copyright>
         <Description>Extensions to aid configuration registration and usage in .NET</Description>
