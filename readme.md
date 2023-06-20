@@ -40,3 +40,17 @@ There's also other apps you may have deployed with similar secret keys, which ma
 ```
 
 * This way, you can keep your sensitive configuration secure with Docker Swarms's secret store, and still be able to use multiple environments per node, and avoid conflicting with other deployed apps that would normally have conflicting keys, if stored in secrets, and loaded out with `AddKeyPerFile`.
+
+An example for your appsettings.json would now be:
+
+```json
+{
+    "ConfigurationFiles": {
+        "Json": [  "/run/secrets/mysecrets" ]
+    }
+}
+```
+
+Where mysecrets would contain the senstive configuration section in the example above.
+
+
