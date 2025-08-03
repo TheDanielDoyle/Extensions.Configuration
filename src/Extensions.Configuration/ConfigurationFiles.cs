@@ -1,6 +1,6 @@
 namespace Microsoft.Extensions.Configuration;
 
-internal sealed record ConfigurationFiles
+public sealed record ConfigurationFiles
 {
     public IEnumerable<string>? Json { get; set; }
 
