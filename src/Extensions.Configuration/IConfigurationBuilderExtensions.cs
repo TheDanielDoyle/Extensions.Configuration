@@ -27,7 +27,7 @@ public static class IConfigurationBuilderExtensions
     public static IConfigurationBuilder AddJsonFromFiles(
         this IConfigurationBuilder configurationBuilder, 
         string? configurationSection = null,
-        bool optional = false,
+        bool optional = true,
         bool reloadOnChange = false)
     {
         ConfigurationFiles configurationFiles = BindConfigurationFiles(configurationBuilder, configurationSection);
